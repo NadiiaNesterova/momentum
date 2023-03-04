@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player widget">
+      <div class="wrapper-description">
+        <div class="player__song-name"></div>
+        <div class="player__duration">
+          <div class="player__progress">
+            <div class="progress-scale"></div>
+          </div>
+          <div class="player__time">
+            <div class="time-current"></div>
+            <div class="time-divider">/</div>
+            <div class="time-length"></div>
+          </div>
+        </div>
+        <ul class="player__songs"></ul>
+      </div>
+      <div class="wrapper-actions">
+        <div class="player__buttons">
+          <button class="button_previous player_icon"></button>
+          <button class="button_play player_icon"></button>
+          <button class="button_next player_icon"></button>
+        </div>
+        <div class="player__volume">
+          <div class="volume-button"></div>
+          <input type="range" id="volume" class="volume-progress" min="0" max="100" value="50" step="1"></input>
+        </div>
+      </div>
+    </div>
+
+    <div class="todo">
+      <div class="todo__container  _activeblock">
+        <h3 class="todo__title">Todo</h3>
+          <div class="todo__form">
+          <input class="todo__input" type="text">
+          <button class="todo__btn-add">+</button>
+        </div>
+        <ul class="todo__list"></ul>
+      </div>
+    </div>
+
+    <div class="weather">
+      <input type="text" class="city" placeholder="Enter city"/>
+    <i class="weather-icon owf"></i>
+    <div class="weather-error"></div>
+    <div class="description-container">
+      <span class="temperature"></span>
+      <span class="weather-description"></span>
+    </div>
+    <div class="wind"></div>
+    <div class="humidity"></div>
+  </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"><span id="greeting1"></span></span>
+      <input type="text" class="name" placeholder="[Enter name]">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-left">
+      <div class='settings__img'></div>
+
+    
+      <div class="chenge-lang">
+       <div class="chenge-en">
+         <input class="lang_btn" type="radio" name="changer language" checked value="en">
+         <label for="lang_btn" class="btn-en">English</label>
+       </div>
+       <div class="chenge-ru">
+         <input class="lang_btn" type="radio" name="changer language" value="ru">
+       <label for="lang_btn" class="btn-ru">Russian</label>
+       </div>
+     </div>
+    </div>
+    
+    
+<div class="quotes">
+  <button class="change-quote"></button>
+  <div>
+    <div class="quote"></div>
+    <div class="author"></div>
+  </div>
+</div>
+  
+    <div class="icons">
+      <div class="icon-copy">	&copy;2023</div>
+      <a href="https://github.com/NadiiaNesterova/"><div class="icon-github"  alt=""></div></a>
+      <a href="https://rs.school/js/"><div class="icon-rss"></div></a>
+      
+    </div>
+  </footer>
+  <script src="js/time.js"></script>
+  <script src="js/greeting.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/translate.js"></script>
+</body>
+</html>
